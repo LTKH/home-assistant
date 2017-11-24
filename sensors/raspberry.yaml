@@ -1,0 +1,8 @@
+#- platform: random
+#  name: 'Датчик температуры'
+#  minimum: 20
+#  maximum: 27
+
+#- platform: command_line
+#  name: gpio_state
+#  command: "gpio_state"

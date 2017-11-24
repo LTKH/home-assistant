@@ -1,0 +1,70 @@
+outside:
+  name: 'Погода'
+  entities:
+    - sensor.outside_temp
+
+#--------------------------------------------------------------   
+
+mainroom:
+  name: 'Зал'
+  entities:
+    - sensor.mainroom_temperature
+    - sensor.mainroom_air_humidity
+    - switch.mainroom_main_light
+    - switch.mainroom_night_light
+    - switch.mainroom_tv
+    - switch.mainroom_conditioner
+    - switch.mainroom_warm_floor
+    - switch.mainroom_vacuum_cleaner
+
+#--------------------------------------------------------------    
+ 
+hallway:
+  name: 'Прихожая'
+  entities:
+    - group.hallway_motion_sensor
+    - group.hallway_light_sensor
+    - switch.hallway_main_light
+    - switch.hallway_back_light
+    
+hallway_motion_sensor:
+  name: 'Датчик движения'
+  icon: mdi:walk
+  entities:
+    - switch.kitchen_pin_1
+    
+hallway_light_sensor:
+  name: 'Датчик освещения'
+  icon: mdi:white-balance-sunny
+  entities:
+    - switch.kitchen_pin_1
+ 
+#--------------------------------------------------------------
+ 
+bathroom:
+  name: 'Ванная'
+  entities:
+    - switch.bathroom_main_light
+    - switch.bathroom_fan
+    - switch.bathroom_boiler
+    - switch.bathroom_water_taps
+    
+#--------------------------------------------------------------
+
+kitchen:
+  name: 'Кухня'
+  entities:
+    - sensor.kitchen_tea_pot
+    - sensor.kitchen_crock_pot
+    - switch.kitchen_main_light
+    - switch.kitchen_fan
+    
+#--------------------------------------------------------------
+
+control:
+  name: 'Питание'
+  entities:
+    - switch.power_mainroom
+    - switch.power_hallway
+    - switch.power_bathroom
+    - switch.power_kitchen

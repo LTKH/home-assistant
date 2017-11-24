@@ -1,0 +1,64 @@
+- platform: template
+  switches:
+  
+    mainroom_main_light:
+      friendly_name: 'Основной свет'
+      value_template: off
+      turn_on:
+      turn_off:
+      
+    mainroom_night_light:
+      friendly_name: 'Ночник'
+      value_template: off
+      turn_on: 
+      turn_off:
+      
+    mainroom_tv:
+      friendly_name: 'Телевизор'
+      value_template: off
+      turn_on: 
+      turn_off: 
+      
+    mainroom_conditioner:
+      friendly_name: 'Кондиционер'
+      value_template: off
+      turn_on: 
+      turn_off:
+      
+    mainroom_vacuum_cleaner:
+      friendly_name: 'Пылесос'
+      value_template: off
+      turn_on: 
+      turn_off: 
+      
+    hallway_main_light:
+      friendly_name: 'Основной свет'
+      value_template: off
+      turn_on: 
+      turn_off:
+      
+    hallway_back_light:
+      friendly_name: 'Зеркало'
+      value_template: off
+      turn_on: 
+      turn_off:
+      
+    bathroom_main_light:
+      friendly_name: 'Основной свет'
+      value_template: off
+      turn_on: 
+      turn_off:
+      
+    bathroom_water_taps:
+      friendly_name: 'Клапаны'
+      value_template: off
+      turn_on: 
+      turn_off:
+      
+    kitchen_main_light:
+      friendly_name: 'Основной свет'
+      value_template: off
+      turn_on: 
+      turn_off: 
+  
+  

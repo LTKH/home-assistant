@@ -1,0 +1,111 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 43.1211
+  longitude: 131.9226
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 108
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Asia/Vladivostok
+  # Customization file
+  customize: !include customize.yaml
+  # Customization glob
+  customize_glob:
+    "switch.*_main_light":
+      icon: mdi:ceiling-light
+    "switch.*_fan":
+      icon: mdi:fan
+    "switch.power_*":
+      icon: mdi:power
+    "sensor.*_pot":
+      icon: mdi:thermometer
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Secrets are defined in the file secrets.yaml
+  # api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: example.duckdns.org:8123
+  server_host: 192.168.100.3
+  server_port: 8123
+  #api_password:
+
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+#sun:
+
+# Weather prediction
+#sensor:
+#  - platform: yr
+
+# Text to speech
+tts:
+  - platform: google
+
+# Load custom components   
+light:
+
+#zwave:
+
+group: !include_dir_merge_named groups/
+switch: !include_dir_merge_list switches/
+sensor: !include_dir_merge_list sensors/
+
+#python_script:
+#group: !include groups.yaml
+#automation: !include automations.yaml
+#script: !include scripts.yaml
+
+#automation:
+#  trigger:
+#    platform: homeassistant
+#    event: start
+#  action:
+#    - service: switch.toggle
+#      entity_id: switch.mainroom_warm_floor 
+#    - service: switch.toggle
+#      entity_id: switch.bathroom_boiler
+#    - service: switch.toggle
+#      entity_id: switch.power_mainroom 
+#    - service: switch.toggle
+#      entity_id: switch.power_hallway
+#    - service: switch.toggle
+#      entity_id: switch.power_bathroom    
+#    - service: switch.toggle
+#      entity_id: switch.power_kitchen     
+    

@@ -1,0 +1,10 @@
+#raspberry:
+#  name: 'Raspberry Pi 3'
+#  icon: mdi:lightbulb-on-outline
+#  entities:
+#    - group.light
+
+#light:
+#  name: 'Процессор'
+#  entities:
+#    - sensor.cpuspeed

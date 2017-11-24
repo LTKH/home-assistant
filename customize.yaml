@@ -1,0 +1,67 @@
+group.outside:
+  order: 1
+
+group.mainroom:
+  order: 2
+  
+group.hallway:
+  order: 3
+  
+group.bathroom:
+  order: 4
+  
+group.kitchen:
+  order: 5
+  
+group.control:
+  order: 6
+  
+automation.automation_0:
+  hidden: true
+  
+sensor.yweather_temperature:
+  hidden: true
+
+sensor.yweather_humidity:
+  hidden: true
+  
+sensor.mainroom_temperature:
+  icon: mdi:thermometer-lines
+ 
+sensor.mainroom_air_humidity:
+  icon: mdi:percent
+  
+switch.mainroom_night_light:  
+  icon: mdi:lightbulb-on
+  
+switch.mainroom_tv:
+  icon: mdi:desktop-mac
+  
+switch.mainroom_conditioner:
+  icon: mdi:air-conditioner
+  
+switch.mainroom_warm_floor:
+  icon: mdi:floor-plan
+  friendly_name: 'Теплый пол'
+ 
+switch.mainroom_vacuum_cleaner: 
+  icon: mdi:power
+  
+switch.kitchen_fan:
+  friendly_name: 'Вытяжка'
+  
+switch.hallway_back_light:  
+  icon: mdi:lightbulb-on
+  
+switch.bathroom_boiler:
+  icon: mdi:power
+  friendly_name: 'Бойлер'
+  
+switch.bathroom_water_taps:
+  icon: mdi:water-pump
+  
+switch.bathroom_fan:
+  friendly_name: 'Вытяжка'
+  
+  
+  

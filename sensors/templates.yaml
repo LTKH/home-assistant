@@ -1,0 +1,29 @@
+- platform: template
+  sensors:
+  
+    outside_temp:
+      friendly_name: "Температура за окном"
+      unit_of_measurement: '°C'
+      value_template: "{{ states('sensor.yweather_temperature')|int }}"
+
+    mainroom_temperature:
+      friendly_name: "Датчик температуры"
+      unit_of_measurement: '°C'
+      value_template: "0"
+    
+    mainroom_air_humidity:
+      friendly_name: "Датчик влажности"
+      unit_of_measurement: '%'
+      value_template: "0"
+    
+    kitchen_tea_pot:
+      friendly_name: "Поттер"
+      unit_of_measurement: '°C'
+      value_template: "0"
+    
+    kitchen_crock_pot:
+      friendly_name: "Мультиварка"
+      unit_of_measurement: '°C'
+      value_template: "0"
+    
+

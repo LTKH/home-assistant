@@ -1,0 +1,13 @@
+- platform: custom_gpio
+  ports:
+    5: mainroom_warm_floor
+    #6: 
+    #12: 
+    #13: 
+    16: bathroom_boiler
+    19: power_mainroom
+    20: power_hallway
+    21: power_bathroom
+    26: power_kitchen
+  invert_logic: false
+  
