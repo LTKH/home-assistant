@@ -39,7 +39,7 @@ http:
   # base_url: example.duckdns.org:8123
   server_host: 192.168.100.3
   server_port: 8123
-  #api_password:
+  api_password: !secret http_password
 
 
 # Checks for available updates
